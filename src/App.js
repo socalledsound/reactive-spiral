@@ -18,6 +18,13 @@ class App extends Component {
         b: 1.1,
      }
 
+
+     update = (prop, value) => {
+         console.log(prop, value);
+         this.setState({[prop] : Number(value)})
+     }
+
+
     render() { 
         const { numCircles, circleSizeScaler, a, b } = this.state;
 
@@ -33,7 +40,7 @@ class App extends Component {
                 </svg>
                 
                 
-                <Slider numCircles={numCircles}/>
+                <Slider name="numCircles" minVal="10" maxVal="1000" value={numCircles} updateParent={this.update}/>
             </div>
 
 
