@@ -1,0 +1,38 @@
+.slider-container {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.label {
+  color: black;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.slider-input {
+  vertical-align: middle;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: red;
+  background-color: grey;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  -webkit-appearance: none;
+}
+
+.slider-input::-webkit-slider-thumb {
+  position: relative;
+  width: 0.5rem;
+  height: 1.75rem;
+  cursor: pointer;
+  margin-top: -0.9rem;
+  margin-bottom: -0.5rem;
+  border-radius: 3px;
+  background-color: black;
+  -webkit-appearance: none;
+}
+
+.slider-input:focus {
+  outline: none;
+}
